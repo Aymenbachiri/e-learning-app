@@ -224,14 +224,7 @@ export default function Courses() {
                       }}
                       className="ml-auto"
                     >
-                      <FaBookmark
-                        className={
-                          isClicked
-                            ? "text-black dark:text-white"
-                            : "text-gray-300 dark:text-blue-600"
-                        }
-                        size={30}
-                      />
+                      <FaBookmark size={30} />
                     </button>
                   </div>
                   <div className="flex items-center mb-4 gap-3">
