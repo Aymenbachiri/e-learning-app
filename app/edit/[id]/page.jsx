@@ -1,7 +1,8 @@
 import EditForm from "@/components/EditForm";
 
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/course/${id}`, {
+  const url = process.env.API_URL;
+  const res = await fetch(`${url}/api/course/${id}`, {
     cache: "no-store",
   });
   if (!res.ok) {
